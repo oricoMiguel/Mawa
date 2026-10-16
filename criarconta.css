@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #d4a373;
+    border-bottom: 1px solid #ddd;
+  }
+
+  h1{
+    font-family: "Co";
+  }
+  
+  .btn-header {
+    background: #c19a6b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  a{
+    color:inherit;
+    text-decoration: none;
+  }
+  a:hover{
+    color: black;
+  }
+  
+  .logo {
+    width: 10%;
+    height: 10%;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  nav li {
+    cursor: pointer;
+    padding: 0 10% 0 0;
+    font-size: 150%;
+    font-family: "Bebas Neue", sans-serif;
+  }
+
+  .sucesso{
+    height: 300px;
+  
+    
+  }
+  
+  main {
+    max-width: 500px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  label {
+    text-align: left;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #d9a679;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #c58e57;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  footer {
+    
+    text-align: center;
+    background-color: #d9a679;
+    padding: 10px;
+    margin-top: 300px;
+  }
+  

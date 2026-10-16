@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffaf5;
+    text-align: center;
+  }
+
+  .btn-header {
+    background: #c19a6b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  h1 {
+    margin: 55px 0;
+    color: #5c3a1d;
+    font-family: "Italiana", sans-serif;
+    font-size: 80px;
+  }
+  
+  .slider-container {
+    position: relative;
+    max-width: 800px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    
+  }
+  
+  .slide {
+    min-width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+    background-color: #a56c3d;
+    padding: 20px;
+  }
+  
+  .slide img {
+    width: 25%;
+    height: auto;
+    border-radius: 8px;
+    padding: 7% 5% 0 0;
+  }
+  
+  .descricao { 
+    color: #fff;
+    float:Right;
+    padding: 18% 15% 0 0;
+    font-family: "Italiana";
+    font-size: 120%;
+    
+  }
+  
+  .descricao h3 {
+    margin: 0 0 10px;
+  }
+  
+  button.prev,
+  button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #5c3a1d;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+  }
+  
+  button.prev {
+    left: 10px;
+  }
+  
+  button.next {
+    right: 10px;
+  }
+  
+  button:hover {
+    background-color: #7b4e2b;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #d4a373;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo {
+    width: 10%;
+    height: 10%;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0 2% 0 0;
+  }
+  
+  nav li {
+    cursor: pointer;
+    padding: 0 10% 0 0;
+    font-size: 150%;
+    font-family:'Bebas Neue', sans-serif;
+  }
+  a{
+    color:inherit;
+    text-decoration: none;
+  }
+  a:hover{
+    color: rgb(156, 154, 154);
+  }
+
+  .banner {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(96, 108, 93);
+    background-size: cover;
+  
+  }
+  
+  .banner img {
+    height: 100%;              /* Faz a imagem preencher a altura */
+    object-fit: center;
+   
+  }
+  
+  .banner-texto {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .banner-texto h1 {
+    font-size: 2em;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+  }

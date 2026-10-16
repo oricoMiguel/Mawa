@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Italiana&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mawa</title>
+  <link rel="stylesheet" href="CONTATO.CSS">
+</head>
+<body>
+
+  <header>
+        <img class="logo" src="img/LOGO.png" alt="nome">
+    <nav>
+      <ul>
+        <li><a href="tela.html">Início</a></li>
+        <li><a href="servico.html">Serviços</a></li>
+        <li><a href="SOBRE.HTML">Sobre</a></li>
+        <li>Horários</li>
+        <li><a href="produto.html">Produtos</a></li>
+      </ul>
+    </nav>
+    <button class="btn-header"><a href="criarconta.html">Criar conta</a></button>
+  </header>
+  
+  <main>
+    <div class="mapa">
+      <h1>MAPA</h1>
+      <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.6945689280356!2d-46.531804199999996!3d-23.6511069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce69975002660d%3A0xd563b2d5983c01c4!2sMawa%20-%20Hands%20and%20Hair!5e0!3m2!1spt-BR!2sbr!4v1748563283012!5m2!1spt-BR!2sbr"
+    width="600"
+    height="450"
+    allowfullscreen
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+    </div>
+
+    <div class="lado-direito">
+      <div class="datas">
+        <h2>DATAS</h2>
+        <div class="linha"></div>
+        <div class="botoes">
+          <button onclick="selecionarData(this)">18/01</button>
+          <button onclick="selecionarData(this)">21/01</button>
+          <button onclick="selecionarData(this)">02/02</button>
+          <button onclick="selecionarData(this)">05/02</button>
+          <button onclick="selecionarData(this)">08/02</button>
+        </div>
+      </div>
+
+      <div class="periodos">
+        <h2>PERIODOS</h2>
+        <div class="linha"></div>
+        <div class="botoes">
+          <button onclick="selecionarPeriodo(this)">Matutino</button>
+          <button onclick="selecionarPeriodo(this)">Vespertino</button>
+          <button onclick="selecionarPeriodo(this)">Noturno</button>
+        </div>
+      </div>
+
+      <div class="codigo-marcacao">
+        <input type="text" id="campoCodigo" placeholder="CÓDIGO AQUI">
+        <button id="botaoMarcar">BOTÃO DE MARCAR</button>
+    </div>
+    </div>
+  </main>
+</body>
+
+
+
+
+  <footer class="footer">
+    <p>© 2025 Mawa - Todos os direitos reservados</p>
+  </footer>
+
+  <script>
+    function selecionarData(botao) {
+      // Remove destaque de todos os botões
+      const botoes = document.querySelectorAll('.botoes button');
+      botoes.forEach(btn => btn.style.background = '');
+  
+      // Destaca o botão clicado
+      botao.style.background = 'lightgreen';
+  
+      // Mostra a data escolhida
+      document.getElementById('dataSelecionada').textContent = "Data selecionada: " + botao.textContent;
+    }
+
+    function selecionarPeriodo(botao) {
+    // Remove destaque de todos os botões
+    const botoes = document.querySelectorAll('.periodos .botoes button');
+    botoes.forEach(btn => btn.style.background = '');
+
+    // Destaca o botão clicado
+    botao.style.background = 'lightblue';
+
+    // Mostra o período escolhido
+    document.getElementById('periodoSelecionado').textContent = "Período selecionado: " + botao.textContent;
+  }
+
+   // 1. Obter referências aos elementos HTML
+        const botao = document.getElementById('botaoMarcar');
+        const inputCodigo = document.getElementById('campoCodigo');
+
+        // 2. Adicionar um ouvinte de evento de clique ao botão
+        botao.addEventListener('click', function() {
+            // 3. Pegar o valor atual do campo de input
+            const valorDoCodigo = inputCodigo.value;
+
+            // 4. Verificar se o campo não está vazio
+            if (valorDoCodigo.trim() !== '') { // .trim() remove espaços em branco extras
+                alert('Você marcou o código: ' + valorDoCodigo);
+                // Aqui você pode adicionar lógica para enviar o código para um servidor, etc.
+            } else {
+                alert('Por favor, digite um código antes de marcar.');
+            }
+        });
+
+       // 1. Obter referências aos elementos HTML usando seus IDs
+       const botaoMarcar = document.getElementById('botaoMarcar');
+        const campoCodigo = document.getElementById('campoCodigo');
+
+        // 2. Adicionar um "ouvinte de evento" (event listener) ao botão
+        // Isso significa que o JavaScript "escutará" o evento de 'click' no botão
+        botaoMarcar.addEventListener('click', function() {
+            // Esta função será executada toda vez que o botão for clicado
+
+            // Pegar o valor atual do campo de input
+            const valorDigitado = campoCodigo.value;
+
+            // Verificar se o campo não está vazio (removendo espaços em branco extras)
+            if (valorDigitado.trim() !== '') {
+                alert('Código marcado: ' + valorDigitado);
+                // Aqui você pode adicionar a lógica real para "marcar" o código,
+                // como enviar para um servidor, salvar em uma lista, etc.
+                
+                // Opcional: Limpar o campo após marcar
+                campoCodigo.value = '';
+
+            } else {
+                alert('Por favor, digite um código no campo antes de marcar.');
+                // Opcional: Focar no campo de input para o usuário digitar
+                campoCodigo.focus();
+            }
+        });
+        
+  </script>

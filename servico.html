@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Serviços - Mawa</title>
+    <link rel="stylesheet" href="servico_style.css"> <!-- Pode usar um arquivo externo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Italiana&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+        <img class="logo" src="img/LOGO.png" alt="nome">
+    <nav>
+      <ul>
+        <li><a href="tela.html">Início</a></li>
+        <li>Serviços</li>
+        <li><a href="SOBRE.HTML">Sobre</a></li>
+        <li><a href="CONTATO.HTML">Horários</a></li>
+        <li><a href="produto.html">Produtos</a></li>
+      </ul>
+    </nav>
+    <button class="btn-header"><a href="criarconta.html">Criar conta</a></button>
+</header>
+
+<section class="banner">
+  <img src="img/BANNER.png" alt="Salão de Beleza">
+  <div class="banner-texto">
+  </div>
+</section>
+
+  <div class="slider-container">
+    <div class="slider">
+      <div class="slide">
+        <img src="img/spa.png" alt="Funcionário 1">
+        <div class="descricao">
+          <h3>SPA</h3>
+          <p>Um espaço acolhedor e exclusivo,</p>
+          <p>que renova as energias e valoriza</p> 
+          <p>sua beleza. Cuidados com a pele e</p> 
+          <p>terapias relaxantes, para obem-estar.</p>
+          <p>Venha viver essa experiência</p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="img/mroena.png" alt="Funcionário 2">
+        <div class="descricao">
+          <h3>Corte de Cabelo</h3>
+          <p>Transforme seu visual com cortes modernos</p>
+          <p>ou clássicos, sempre alinhados ao seu estilo</p>
+          <p>e personalidade. Técnica, cuidado</p>
+          <p>e atenção para realça</p>
+          <p>a sua beleza em cada detalhe.</p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="img/Foto4Serv.png" alt="Funcionário 3">
+        <div class="descricao">
+          <h3>Tratamentos de Cabelo</h3>
+          <p>Os tratamentos químicos envolvem a aplicação</p>
+          <p>de substâncias que alteram de forma permanente</p>
+          <p>ou semipermanente a estrutura natural</p>
+          <p>do fio, seja para alisar, enrolar, colorir ou fortalecer.</p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="img/Manicure.png" alt="Funcionário 4">
+        <div class="descricao">
+          <h3>Manicure</h3>
+          <p>Desfrute de um momento único,</p>
+          <p>com terapias sensoriais e tratamentos</p>
+          <p>personalizados para relaxar corpo e mente.</p>
+          <p>O cuidado que você merece!</p>
+        </div>
+      </div>
+    </div>
+
+
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+
+  <script>
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.slide');
+    const prev = document.querySelector('.prev');
+    const next = document.querySelector('.next');
+
+    let index = 0;
+
+    function showSlide(i) {
+      index = (i + slides.length) % slides.length;
+      slider.style.transform = 'translateX(' + (-index * 100) + '%)';
+    }
+
+    prev.addEventListener('click', () => {
+      showSlide(index - 1);
+    });
+
+    next.addEventListener('click', () => {
+      showSlide(index + 1);
+    });
+
+
+    
+  </script>
+
+</body>
+
+<footer>
+    <p>© 2025 Mawa - Todos os direitos reservados</p>
+  </footer>
+
+</html>

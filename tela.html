@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Italiana&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mawa</title>
+  <link rel="stylesheet" href="tela02.css">
+</head>
+<body>
+
+  <header>
+        <img class="logo" src="img/LOGO.png" alt="nome">
+    <nav>
+      <ul>
+        <li>Início</li>
+        <li><a href="servico.html">Serviços</a></li>
+        <li><a href="SOBRE.HTML">Sobre</a></li>
+        <li><a href="CONTATO.HTML">Horários</a></li>
+        <li><a href="produto.html">Produtos</a></li>
+      </ul>
+    </nav>
+    <button class="btn-header"><a href="criarconta.html">Criar conta</a></button>
+  </header>
+
+  <section class="intro">
+    <div class="intro-text">
+      <p>Estudada e feita com amor e qualidade. Produtos 100% SGO natural. O ambiente propicia relaxamento e bem-estar, com um atendimento acolhedor...</p>
+      <button class="btn-intro"><a href="produto.html">Botão para produtos ▼</a></button>
+    </div>
+    <img src="img/IMAGEM E TEXTO.png" alt="Salão de beleza">
+  </section>
+
+  <section class="info">
+    <img src="img/Texto.png" alt="Salão interno">
+    <div class="info-text">
+      <p>Estudada com os melhores materiais do mercado, a linha Mawa... para uma melhor experiência...</p>
+    </div>
+  </section>
+
+  <section class="produtos">
+    <div class="icons">
+      <img src="img/Rectangle 10.png" alt="Ícone 1" onclick="mostrarProduto('spa')">
+      <img src="img/Rectangle 11.png" alt="Ícone 2" onclick="mostrarProduto('cabelo')">
+      <img src="img/Rectangle 12.png" alt="Ícone 3" onclick="mostrarProduto('manicure')">
+      <img src="img/Rectangle 13.png" alt="Ícone 4" onclick="mostrarProduto('corte')">
+    </div>
+</section>
+
+<section id="descricao" class="descricao oculto">
+  <div class="caixa-texto">
+    <img src="img/LOGO.png" alt="Logo Mawa">
+    <div class="texto">
+    <div id="spa" class="produto">
+        <h3>SPA</h3>
+        <p>Um espaço acolhedor e exclusivo...</p>
+        <button onclick="saibaMais('spa')">Saiba Mais</button>
+    </div>
+    <div id="cabelo" class="produto">
+        <h3>Tratamento de Cabelo</h3>
+        <p>Cuidado personalizado para fortalecer...</p>
+        <button onclick="saibaMais1('cabelo')">Saiba Mais</button>
+    </div>
+    <div id="manicure" class="produto">
+        <h3>Manicure</h3>
+        <p>Cuidamos das suas unhas com carinho...</p>
+        <button onclick="saibaMais2('manicure')">Saiba Mais</button>
+    </div>
+    <div id="corte" class="produto">
+        <h3>Corte de Cabelo</h3>
+        <p>Transforme seu visual com cortes modernos...</p>
+        <button onclick="saibaMais3('corte')">Saiba Mais</button>
+    </div>
+</section>
+
+
+  <section class="descontos">
+    <img src="img/IMPERDÍVEL.png" alt="sem money">
+
+  </section>
+
+  <section class="comentarios">
+    <h2>Comentários</h2>
+    <div class="carousel">
+      <button class="prev">◀</button>
+      <div class="comentario-box">
+        <p>"Ótimo atendimento e produtos de qualidade!"</p>
+      </div>
+      <button class="next">▶</button>
+    </div>
+  </section>
+
+</body>
+
+
+<script src="funca.js"></script>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Italiana&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Produtos - Mawa</title>
+  <link rel="stylesheet" href="produto.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo"> <img class="logo" src="img/LOGO.png" alt=""></div>
+    <nav>
+    <ul>
+      <li><a href="tela.html">Início</a></li>
+      <li><a href="servico.html">Serviços</a></li>
+      <li><a href="SOBRE.HTML">Sobre</a></li>
+      <li><a href="CONTATO.HTML">Horários</a></li>
+      <li><a href="produto.html">Produtos</a></li>
+    </ul>
+    </nav>
+    <button class="btn-header"><a href="criarconta.html">Criar conta</a></button>
+  </header>
+
+  <main>
+    <h1>Nossos Produtos</h1>
+
+    <div class="produtos-container">
+
+      <div class="produto-card">
+        <img src="img/creme.jpeg" alt="Shampoo">
+        <h2>Shampoo Nutritivo</h2>
+        <p>Hidratação profunda e brilho natural.</p>
+        <button>Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="produto-card">
+        <img src="img/creme2.jpeg" alt="Máscara">
+        <h2>Máscara Capilar</h2>
+        <p>Nutre e repara os fios danificados.</p>
+        <button>Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="produto-card">
+        <img src="img/creme3.jpeg" alt="Creme">
+        <h2>Creme de Pentear</h2>
+        <p>Definição e leveza para os cachos.</p>
+        <button>Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="produto-card">
+        <img src="img/Produtos.jpeg" alt="Creme">
+        <h2>Creme de Pentear</h2>
+        <p>Definição e leveza para os cachos.</p>
+        <button>Adicionar ao Carrinho</button>
+      </div>
+
+    <div class="produto-card">
+      <img src="img/shampoo_no_box.jpeg" alt="Creme">
+      <h2>Creme de Pentear</h2>
+      <p>Definição e leveza para os cachos.</p>
+      <button>Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto-card">
+      <img src="img/óleo.jpeg" alt="Creme">
+      <h2>Creme de Pentear</h2>
+      <p>Definição e leveza para os cachos.</p>
+      <button>Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto-card">
+      <img src="img/caia.jpeg" alt="Creme">
+      <h2>Creme de Pentear</h2>
+      <p>Definição e leveza para os cachos.</p>
+      <button>Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto-card">
+      <img src="img/mel.jpeg" alt="Creme">
+      <h2>Creme de Pentear</h2>
+      <p>Definição e leveza para os cachos.</p>
+      <button>Adicionar ao Carrinho</button>
+    </div>
+
+
+    <div class="produto-card">
+      <img src="img/mel2.jpeg" alt="Creme">
+      <h2>Creme de Pentear</h2>
+      <p>Definição e leveza para os cachos.</p>
+      <button>Adicionar ao Carrinho</button>
+    </div>
+
+
+    <div class="produto-card">
+      <img src="img/sol.jpeg" alt="Creme">
+      <h2>Creme de Pentear</h2>
+      <p>Definição e leveza para os cachos.</p>
+      <button>Adicionar ao Carrinho</button>
+    </div>
+
+
+
+
+  </main>
+
+  
+
+  <footer>
+    <p>© 2025 Mawa - Todos os direitos reservados</p>
+  </footer>
+
+</body>
+</html>
+
+<script>
+    // Seleciona todos os botões de "Adicionar ao Carrinho"
+    const botoes = document.querySelectorAll('.produto-card button');
+  
+    // Adiciona o evento de clique em cada botão
+    botoes.forEach(botao => {
+      botao.addEventListener('click', () => {
+        alert('Produto adicionado ao carrinho com sucesso!');
+      });
+    });
+  </script>

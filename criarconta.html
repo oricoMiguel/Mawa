@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Criar Conta - Mawa</title>
+  <link rel="stylesheet" href="criarconta.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Italiana&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="img/LOGO.png" alt="nome">
+    <nav>
+      <ul>
+        <li><a href="tela.html">Início</a></li>
+        <li><a href="servico.html">Serviços</a></li>
+        <li><a href="SOBRE.HTML">Sobre</a></li>
+        <li><a href="servico.html">Horários</a></li>
+        <li><a href="produto.html">Produtos</a></li>
+      </ul>
+    </nav>
+    <button class="btn-header"><a href="criarconta.html">Criar conta</a></button>
+  </header>
+
+  <main>
+    <h1>Criar Conta</h1>
+
+    <form id="cadastroForm">
+      <label>Nome: <input type="text" name="nome" required></label>
+      <label>Email: <input type="email" name="email" required></label>
+      <label>Senha: <input type="password" name="senha" required></label>
+      <label>Telefone <input type="text" name="numero" required></label>
+      <button type="submit">Cadastrar</button>
+    </form>
+
+    <div id="confirmacao" class="hidden">
+      <h2>Conta Criada com Sucesso!</h2>
+      <img class="sucesso" src="img/Confirmação.PNG" alt="Sucesso" class="sucesso-img">
+      <p><strong>Nome:</strong> <span id="confNome"></span></p>
+      <p><strong>Email:</strong> <span id="confEmail"></span></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Mawa - Todos os direitos reservados</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById('cadastroForm');
+    const confirmacao = document.getElementById('confirmacao');
+    const confNome = document.getElementById('confNome');
+    const confEmail = document.getElementById('confEmail');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const nome = form.nome.value;
+      const email = form.email.value;
+
+      confNome.textContent = nome;
+      confEmail.textContent = email;
+
+      form.style.display = 'none';
+      confirmacao.classList.remove('hidden');
+    });
+  </script>
+
+</body>
+</html>

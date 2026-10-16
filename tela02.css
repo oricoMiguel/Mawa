@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #d4a373;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo {
+    width: 10%;
+    height: 10%;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  nav li {
+    cursor: pointer;
+    padding: 0 10% 0 0;
+    font-size: 150%;
+    font-family: "Bebas Neue", sans-serif;
+  }
+  a{
+    color:inherit;
+    text-decoration: none;
+  }
+  a:hover{
+    color: black;
+  }
+  
+  .btn-header {
+    background: #c19a6b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .intro, .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "Italiana", sans-serif;
+    font-size: 25px;
+  }
+  
+  .intro img, .info img {
+    width: 30%;
+    padding: 2% 0 0 0;
+    border-radius: 2px;
+  }
+  
+  .intro-text, .info-text {
+    max-width: 400px;
+    font-family: "Italiana", sans-serif;
+    font-size: 130%;
+  }
+  
+  .btn-intro {
+    margin-top: 10px;
+    background: #c19a6b;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .produtos {
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .descricao {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.caixa-texto {
+  display: flex;                     
+  align-items: center;               
+  background-color: #C19061;         
+  padding: 20px;                     
+  border-radius: 15px;              
+  max-width: 700px;                  
+  margin: 20px auto;                
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+}
+
+.caixa-texto img {
+  width: 80px;                       
+  margin-right: 20px;                
+}
+
+.caixa-texto h3 {
+  font-family: 'Georgia', serif;     
+  font-size: 24px;                   
+  margin: 0 0 10px 0;                
+}
+
+.caixa-texto p {
+  font-family: 'Cormorant Garamond', serif; 
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  color: #3B2F2F;
+}
+
+
+.descricao.oculto {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.produto {
+    display: none;
+}
+
+.produto.ativo {
+    display: block;
+}
+  
+  .produtos h2 {
+    margin-bottom: 20px;
+  }
+  
+  .icons img {
+    width: 10%;
+    margin: 5%;
+  }
+  
+  .descontos {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 15%;
+   margin-bottom: 3%;
+   border-radius: 34px;
+  }
+  
+  .desconto-text h3 {
+    margin-bottom: 10px;
+  }
+  
+
+  
+  .comentarios {
+    background: #c19a6b;
+    padding: 40px 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .prev, .next {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .comentario-box {
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    margin: 0 10px;
+    border-radius: 10px;
+    min-width: 200px;
+  }
+  

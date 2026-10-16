@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  .btn-header {
+    background: #c19a6b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .logo {
+    width: 10%;
+    height: 10%;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  nav li {
+    cursor: pointer;
+    padding: 0 10% 0 0;
+    font-size: 150%;
+    font-family: "Bebas Neue", sans-serif;
+  }
+  a{
+    color:inherit;
+    text-decoration: none;
+  }
+  a:hover{
+    color: black;
+  }
+
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  header {
+    background-color: #d4a373;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    line-height: 1.2;
+  }
+  
+  .inputs {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .inputs input {
+    width: 40px;
+    height: 20px;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 30px;
+  }
+  
+  .search-box input {
+    border: none;
+    padding: 0 10px;
+    width: 150px;
+    outline: none;
+  }
+  
+  .search-box button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 10px;
+    font-size: 16px;
+  }
+  
+  main {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .mapa {
+    flex: 1;
+    min-width: 300px;
+    margin-left:10%;
+  }
+  
+  .mapa h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .mapa img {
+    width: 100%;
+    border-radius: 20px;
+  }
+  
+  .lado-direito {
+    flex: 1;
+    min-width: 300px;
+    padding-left: 30px;
+    padding: 5% 10% 0 0;
+  }
+  
+  .datas, .periodos {
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin: 10px 0 5px 0;
+  }
+  
+  .linha {
+    height: 4px;
+    width: 100px;
+    background-color: black;
+    margin-bottom: 10px;
+  }
+  
+  .botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .botoes button {
+    background-color: #c58c5f;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .codigo-marcacao {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .codigo-marcacao input {
+    padding: 10px;
+    border: 2px solid #c58c5f;
+    border-radius: 5px;
+    flex: 1;
+    font-size: 16px;
+  }
+  
+  .botao-marcar {
+    background-color: #c58c5f;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .footer{
+    text-align: center;
+    margin-top: 8%;
+  }
+
+  /* Estilo para o container que envolve o input e o botão */
+.codigo-marcacao {
+  display: flex; /* Para colocar o input e o botão lado a lado */
+  align-items: center; /* Alinha verticalmente no centro */
+  gap: 15px; /* Espaço entre o input e o botão */
+  margin-top: 20px; /* Espaçamento superior, ajuste conforme necessário no layout geral */
+  width: fit-content; /* Faz o container se ajustar ao conteúdo */
+  
+  /* Para replicar o contorno rosa claro do grupo na imagem */
+  border: 2px solid #FFDCDC; /* Borda rosa clara (pode ser ajustada para um tom mais próximo se necessário) */
+  border-radius: 8px; /* Arredondamento da borda */
+  padding: 10px 20px; /* Preenchimento interno para separar o conteúdo da borda */
+  background-color: #c58c5f; /* Um fundo bem clarinho para a área, se necessário */
+  box-sizing: border-box; /* Inclui padding e border na largura/altura total */
+}
+
+/* Estilo para o campo de input */
+#campoCodigo { /* Usando o ID, pois você o tem no seu HTML */
+  flex-grow: 1; /* Permite que o input ocupe o espaço disponível */
+  padding: 12px 15px; /* Preenchimento interno */
+  border: 1px solid #CCC; /* Borda cinza suave */
+  border-radius: 5px; /* Arredondamento das bordas */
+  font-size: 16px; /* Tamanho da fonte */
+  color: #333; /* Cor do texto digitado */
+  outline: none; /* Remove a borda de foco padrão do navegador */
+  transition: border-color 0.3s ease; /* Transição suave na mudança de cor da borda */
+  text-transform: uppercase; /* Opcional: para o texto digitado ser em maiúsculas */
+  box-sizing: border-box;
+}
+
+/* Estilo para o placeholder do input */
+#campoCodigo::placeholder {
+  color: #AAA; /* Cor do texto do placeholder */
+  font-weight: bold; /* Deixa o placeholder em negrito, como na imagem */
+}
+
+/* Mudar a cor da borda do input ao focar */
+#campoCodigo:focus {
+  border-color: #e28b4d; /* Cor da borda do botão "marcar" */
+}
+
+/* Estilo para o botão "BOTÃO DE MARCAR" */
+#botaoMarcar { /* Usando o ID, pois você o tem no seu HTML */
+  background-color: #D4AF94; /* Cor de fundo marrom claro similar à imagem */
+  color: rgb(255, 252, 244); /* Cor do texto */
+  padding: 12px 25px; /* Preenchimento interno, um pouco maior para o botão */
+  border: none; /* Remove a borda padrão do botão */
+  border-radius: 5px; /* Bordas levemente arredondadas */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  font-size: 16px; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito */
+  text-transform: uppercase; /* Texto em maiúsculas, como na imagem */
+  transition: background-color 0.3s ease, transform 0.1s ease; /* Transição suave na cor e no transform */
+  white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+  box-sizing: border-box;
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+#botaoMarcar:hover {
+  background-color: #C39F8A; /* Cor de fundo um pouco mais escura ao passar o mouse */
+}
+
+/* Efeito ao clicar no botão */
+#botaoMarcar:active {
+  background-color: #B28F7E; /* Cor de fundo ainda mais escura ao clicar */
+  transform: translateY(1px); /* Pequeno movimento para baixo para dar feedback de clique */
+}
