@@ -32,15 +32,6 @@ A proposta foi criar a presença digital de um salão de beleza real, apresentan
 - 📅 **Área de agendamento** com seleção de datas e períodos (matutino, vespertino e noturno)
 - 🎨 **Identidade visual própria**, com paleta de tons terrosos e verde acinzentado inspirada no salão
 
-## 🖼️ Telas
-
-| Início | Serviços |
-|:---:|:---:|
-| Apresentação do salão e menu de navegação | Carrossel com Spa, Cabelo e Unhas |
-
-| Mapa e agendamento | Produtos |
-|:---:|:---:|
-| Localização, datas e períodos | Catálogo com botão de carrinho |
 
 ## 🛠️ Tecnologias utilizadas
 
@@ -49,20 +40,6 @@ A proposta foi criar a presença digital de um salão de beleza real, apresentan
 - **JavaScript**: interatividade (carrossel, seleção de datas/períodos, carrinho)
 - **Google Maps**: incorporação do mapa de localização
 - **Git e GitHub**: versionamento e publicação do código
-
-## 📂 Estrutura do projeto
-
-```
-Mawa/
-├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-├── img/
-│   └── preview.png
-└── README.md
-```
 
 ## 🚀 Como executar
 
